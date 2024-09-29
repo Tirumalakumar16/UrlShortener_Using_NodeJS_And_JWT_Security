@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signIn</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #inp-form{
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        .submit{
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid black;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>signIn</h1>
+    <form action="/user/signIn" method="post">
+        <label >Email</label>
+        <input type="text" name="email" id="inp-form" placeholder="example@gmail.com"><br>
+        <label >Password</label>
+        <input type="password" name="password" id="inp-form" placeholder="Password"><br>
+        <button type="submit" class="submit">signIn</button>
+    </form>
+    
+</body>
+</html>
